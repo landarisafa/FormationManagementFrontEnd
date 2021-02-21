@@ -1,0 +1,66 @@
+<mat-card>
+    <mat-card-title>
+      <h2 mat-dialog-title>AJOUT D'UNE FORMATION</h2>
+    </mat-card-title>
+  
+    <mat-card-content>
+      <form>
+  
+        <mat-form-field>
+          <input matInput placeholder="Titre du Formation"/>
+          <mat-error>Titre du Formation est vide!</mat-error>
+        </mat-form-field>
+  
+        <div class="formContent">
+  
+          <div class="fieldCol">
+            <mat-form-field>
+              <input matInput type="number" min="3" max="30"
+                     placeholder="Nombre des heures">
+              <mat-error>Nombre des heures est vide!</mat-error>
+            </mat-form-field>
+  
+            <mat-form-field>
+              <mat-label>Date Début</mat-label>
+              <input matInput [matDatepicker]="picker" />
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+              <mat-error>Date Début est vide!</mat-error>
+            </mat-form-field>
+          </div>
+  
+          <div class="fieldCol">
+            <mat-form-field>
+              <input matInput type="number" min="1" max="40"
+                     placeholder="Nombre max des membres" />
+              <mat-error>Nombre max des membres est vide!</mat-error>
+            </mat-form-field>
+  
+            <mat-form-field>
+              <mat-label>Date Fin</mat-label>
+              <input matInput [matDatepicker]="picker2" />
+              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+              <mat-datepicker #picker2></mat-datepicker>
+              <mat-error>Date Fin est vide!</mat-error>
+            </mat-form-field>
+          </div>
+  
+        </div>
+  
+        <mat-form-field>
+          <input matInput placeholder="Les technologies" />
+          <mat-error>Liste des technologies est vide!</mat-error>
+        </mat-form-field>
+  
+      </form>
+    </mat-card-content>
+  
+    <mat-card-actions class="display_btn">
+      <button mat-raised-button>Annuler</button>
+  
+      <button mat-raised-button cdkFocusInitial
+              color="primary">
+        Valider
+      </button>
+    </mat-card-actions>
+  </mat-card>

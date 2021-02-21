@@ -1,0 +1,22 @@
+.formContent {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    flex-wrap: wrap
+  }
+  
+  mat-form-field {
+    display: block;
+  }
+  
+  .fieldCol {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    flex: 1;
+  }
+  
+  .display_btn {
+    display: flex;
+    justify-content: flex-end;
+  }
