@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { FormationSaveComponent } from './components/formation-save/formation-save.component';
+import { FormationListComponent } from './components/formation-list/formation-list.component';
+import { FormationDetailComponent } from './components/formation-detail/formation-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormationSaveComponent
+    FormationSaveComponent,
+    FormationListComponent,
+    FormationDetailComponent
   ],
   imports: [
     BrowserModule,
